@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    text-align: center;
+    color: #FFF;
+}
+header h1 {
+    margin: 20px 0;
+    text-align: center;
+}
+header p {
+    font-size: .8rem;
+}
+.content-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+}
+.content-area .neutralArea {
+    width: 448px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #FFF;
+}
+.content-area .neutralArea img {
+    width: 50px;
+}
+.neutralArea .item {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    background-color: #000;
+    color: #FFF;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+}
+.neutralArea img {
+    width: 50px;
+}
+.areas {
+    max-width: 450px;
+    display: flex;
+    margin-top: 20px;
+    color: #fff;
+    border: 2px solid transparent;
+}
+.areas img {
+    width: 50px;
+    margin-top: 20px;
+}
+.area {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 2px solid #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.button {
+    text-align: center;
+}
+.btn-next {
+    padding: 5px 10px;
+    font-size: .825rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #00FF00;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0;
+    box-shadow: 0px 2px 5px #000;
+    text-align: center;
+}
+.btn-next a {
+    text-decoration: none;
+    color: #000;
+}
+footer {
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: .625rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.content-footer {
+    padding: 15px 0;
+}
+.content-footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+.congrulation {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 150px;
+}
+.congrulation h1 {
+    font-size: 4rem;
+}
+.congrulation p {
+    margin-top: 20px;
+}
+/* ----used-js---- */
+.correct {
+    border: 2px solid #00FF00;
+} 
+.visible {
+    display: inline-block;
+}
+.invisible {
+    display: none;
+}
+
+@media (max-width: 455px) {
+    header h1 {
+        font-size: 25px;
+    }
+    .content-area .neutralArea {
+        width: 300px;
+    }
+    .areas .area{
+        width: 100px;
+        height: 100px;
+    }
+    .congrulation h1 {
+        font-size: 3rem;
+    }
+}
